@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Funcionalidad 2: Mostrar un mensaje emergente al cargar la página
-  alert('Bienvenido a Solis Performance: tu mecánica de confianza y rendimiento.');
 
   // Funcionalidad 3: Animación suave al desplazarse a las secciones (hash links)
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -29,22 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Funcionalidad 4: Cambio de color en encabezados cuando la página se hace más larga
-  window.addEventListener('scroll', () => {
-    const headers = document.querySelectorAll('h2, h3');
-    headers.forEach(header => {
-      if (window.scrollY > 200) {
-        header.style.color = '#ff0000'; // Rojo brillante
-      } else {
-        // Restaurar color si quieres
-        if (header.tagName === 'H2') {
-          header.style.color = '#e60000'; // Rojo oscuro
-        } else if (header.tagName === 'H3') {
-          header.style.color = '#e60000';
-        }
-      }
-    });
-  });
+ 
 
   // Funcionalidad 5: Función para mostrar un mensaje personalizado en botones
   const customBtns = document.querySelectorAll('.custom-alert');
@@ -55,4 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
 
